@@ -1,0 +1,22 @@
+{
+  "name": "p3_corentin_lumineau",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/application.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corentin-lumineau/P3_Corentin_Lumineau.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corentin-lumineau/P3_Corentin_Lumineau/issues"
+  },
+  "homepage": "https://github.com/corentin-lumineau/P3_Corentin_Lumineau#readme",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}

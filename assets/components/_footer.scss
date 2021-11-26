@@ -1,0 +1,33 @@
+footer {
+  background: black;
+
+  .footer-container {
+    max-width: 1300px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .logo-footer {
+      img {
+        width: 100px;
+      }
+    }
+
+    .footer-content {
+      font-size: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      &__line {
+        display: flex;
+        justify-content: flex-start;
+        gap: 8px;
+
+        .fas {
+          width: 4%;
+        }
+      }
+    }
+  }
+}

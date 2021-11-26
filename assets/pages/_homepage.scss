@@ -1,0 +1,62 @@
+.localisation {
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+  gap: 15px;
+  background: $background-grey-dark;
+  color: lighten(black, 30%);
+  font-weight: 700;
+
+  i {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-disclaimer {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 6vh 2vh 9vh 2vh;
+  text-align: center;
+  background: $background-grey;
+  align-items: center;
+
+  &__title {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  &__element {
+    color: lighten(black, 50%);
+  }
+
+  &__call-to-action {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+  }
+}
+
+.how-it-works {
+  padding: 6vh 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding: 2vh;
+  }
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  padding: 6vh 2vh;
+  background: $background-grey;
+}
