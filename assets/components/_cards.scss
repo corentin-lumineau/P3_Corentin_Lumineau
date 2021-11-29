@@ -5,17 +5,50 @@
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   border-radius: 20px;
   height: 230px;
+  position: relative;
+
+  &__disclaimer-new {
+    position: absolute;
+    top: 1vh;
+    right: 2vh;
+    background: $color-tertiary;
+    color: darken($color-tertiary, 40%);
+    padding: 6px 10px 6px 10px;
+    font-size: 12px;
+    border-radius: 2px;
+    font-weight: 700;
+  }
 
   &__description {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 2vh;
+    padding: 10px 2vh 2vh 1vh;
 
     &__fav {
-      display: flex;
-      align-items: center;
+      position: relative;
       transform: scale(1.4);
+
+      .fas {
+        position: absolute;
+        right: -5px;
+        top: 7px;
+        opacity: 0;
+        z-index: 1;
+
+        &:hover {
+          opacity: 1;
+          color: $color-primary;
+          cursor: pointer;
+        }
+      }
+
+      .far {
+        position: absolute;
+        right: -5px;
+        top: 7px;
+        opacity: 1;
+      }
     }
   }
 

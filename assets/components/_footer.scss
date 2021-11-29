@@ -1,17 +1,15 @@
 footer {
-  background: black;
+  background: lighten(black, 5%);
 
   .footer-container {
     max-width: 1300px;
     color: white;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     .logo-footer {
-      img {
-        width: 100px;
-      }
+      font-family: $secondary-font;
     }
 
     .footer-content {
