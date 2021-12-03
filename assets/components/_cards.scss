@@ -1,8 +1,6 @@
 .restaurant-card {
   display: block;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
-    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
-    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  box-shadow: $primary-box-shadow;
   border-radius: 20px;
   height: 230px;
   position: relative;
@@ -29,26 +27,7 @@
       position: relative;
       transform: scale(1.4);
 
-      .fas {
-        position: absolute;
-        right: -5px;
-        top: 7px;
-        opacity: 0;
-        z-index: 1;
-
-        &:hover {
-          opacity: 1;
-          color: $color-primary;
-          cursor: pointer;
-        }
-      }
-
-      .far {
-        position: absolute;
-        right: -5px;
-        top: 7px;
-        opacity: 1;
-      }
+      @include fav;
     }
   }
 
@@ -58,5 +37,41 @@
     height: 70%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
+  }
+}
+
+.menu-card {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 15px 10px 10px;
+  box-shadow: $primary-box-shadow;
+  width: 100%;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 80%;
+
+    p {
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    h4 {
+      font-size: 15px;
+      white-space: nowrap;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-end;
+    font-size: 12px;
+    font-weight: 700;
   }
 }
