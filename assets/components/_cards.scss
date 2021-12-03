@@ -46,16 +46,23 @@
   justify-content: space-between;
   background: white;
   border-radius: 10px;
-  padding: 10px 15px 10px 10px;
   box-shadow: $primary-box-shadow;
   width: 100%;
-  animation: menu $menu-duration $menu-delay ease-in-out both;
+  gap: 10px;
+  z-index: -1;
+  animation: menu $menu-duration ease-in-out both;
+  @for $i from 1 through 50 {
+    &--#{$i} {
+      animation-delay: 200ms * $i;
+    }
+  }
 
   &__description {
     display: flex;
     flex-direction: column;
     gap: 3px;
     width: 80%;
+    padding: 10px;
 
     p {
       font-size: 12px;
@@ -75,23 +82,25 @@
     align-items: flex-end;
     font-size: 12px;
     font-weight: 700;
+    padding-bottom: 10px;
   }
 
   &__animation {
+    width: 0;
     display: flex;
-    transform: scaleX(0);
     align-items: center;
     justify-content: center;
     background: $color-tertiary;
     transition: all ease-in-out 500ms;
-    transform-origin: right;
+    opacity: 0;
+    z-index: -2;
   }
 
   &:hover {
     .menu-card__animation {
-      background: $color-tertiary;
-      transform: scaleX(1);
       width: 50px;
+      opacity: 1;
+      z-index: inherit;
     }
   }
 }

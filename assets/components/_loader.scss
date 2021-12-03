@@ -20,6 +20,11 @@
       background: $color-primary;
       border-radius: 50%;
       animation: point $loader-duration backwards infinite ease-in-out alternate;
+      @for $i from 1 through 3 {
+        &--#{$i} {
+          animation-delay: calc(300ms * $i);
+        }
+      }
     }
   }
 }

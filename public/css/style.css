@@ -8,7 +8,7 @@
 }
 @keyframes bloc {
   0% {
-    transform: translateX(-9999px);
+    transform: translateX(-1000px);
   }
   100% {
     transform: translateX(0);
@@ -16,7 +16,7 @@
 }
 @keyframes menu {
   0% {
-    transform: translateY(-9999px);
+    transform: translateY(-300px);
   }
   100% {
     transform: translateY(0);
@@ -51,9 +51,10 @@ a {
   color: black;
 }
 
-header,
-section,
-footer {
+#home-header,
+#home-section-1,
+#home-section-2,
+#home-footer {
   animation: bloc 0ms 3000ms both;
 }
 
@@ -206,16 +207,168 @@ footer {
   justify-content: space-between;
   background: white;
   border-radius: 10px;
-  padding: 10px 15px 10px 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 100%;
-  animation: menu 3000ms 2000ms ease-in-out both;
+  gap: 10px;
+  z-index: -1;
+  animation: menu 1000ms ease-in-out both;
+}
+.menu-card--1 {
+  animation-delay: 200ms;
+}
+.menu-card--2 {
+  animation-delay: 400ms;
+}
+.menu-card--3 {
+  animation-delay: 600ms;
+}
+.menu-card--4 {
+  animation-delay: 800ms;
+}
+.menu-card--5 {
+  animation-delay: 1000ms;
+}
+.menu-card--6 {
+  animation-delay: 1200ms;
+}
+.menu-card--7 {
+  animation-delay: 1400ms;
+}
+.menu-card--8 {
+  animation-delay: 1600ms;
+}
+.menu-card--9 {
+  animation-delay: 1800ms;
+}
+.menu-card--10 {
+  animation-delay: 2000ms;
+}
+.menu-card--11 {
+  animation-delay: 2200ms;
+}
+.menu-card--12 {
+  animation-delay: 2400ms;
+}
+.menu-card--13 {
+  animation-delay: 2600ms;
+}
+.menu-card--14 {
+  animation-delay: 2800ms;
+}
+.menu-card--15 {
+  animation-delay: 3000ms;
+}
+.menu-card--16 {
+  animation-delay: 3200ms;
+}
+.menu-card--17 {
+  animation-delay: 3400ms;
+}
+.menu-card--18 {
+  animation-delay: 3600ms;
+}
+.menu-card--19 {
+  animation-delay: 3800ms;
+}
+.menu-card--20 {
+  animation-delay: 4000ms;
+}
+.menu-card--21 {
+  animation-delay: 4200ms;
+}
+.menu-card--22 {
+  animation-delay: 4400ms;
+}
+.menu-card--23 {
+  animation-delay: 4600ms;
+}
+.menu-card--24 {
+  animation-delay: 4800ms;
+}
+.menu-card--25 {
+  animation-delay: 5000ms;
+}
+.menu-card--26 {
+  animation-delay: 5200ms;
+}
+.menu-card--27 {
+  animation-delay: 5400ms;
+}
+.menu-card--28 {
+  animation-delay: 5600ms;
+}
+.menu-card--29 {
+  animation-delay: 5800ms;
+}
+.menu-card--30 {
+  animation-delay: 6000ms;
+}
+.menu-card--31 {
+  animation-delay: 6200ms;
+}
+.menu-card--32 {
+  animation-delay: 6400ms;
+}
+.menu-card--33 {
+  animation-delay: 6600ms;
+}
+.menu-card--34 {
+  animation-delay: 6800ms;
+}
+.menu-card--35 {
+  animation-delay: 7000ms;
+}
+.menu-card--36 {
+  animation-delay: 7200ms;
+}
+.menu-card--37 {
+  animation-delay: 7400ms;
+}
+.menu-card--38 {
+  animation-delay: 7600ms;
+}
+.menu-card--39 {
+  animation-delay: 7800ms;
+}
+.menu-card--40 {
+  animation-delay: 8000ms;
+}
+.menu-card--41 {
+  animation-delay: 8200ms;
+}
+.menu-card--42 {
+  animation-delay: 8400ms;
+}
+.menu-card--43 {
+  animation-delay: 8600ms;
+}
+.menu-card--44 {
+  animation-delay: 8800ms;
+}
+.menu-card--45 {
+  animation-delay: 9000ms;
+}
+.menu-card--46 {
+  animation-delay: 9200ms;
+}
+.menu-card--47 {
+  animation-delay: 9400ms;
+}
+.menu-card--48 {
+  animation-delay: 9600ms;
+}
+.menu-card--49 {
+  animation-delay: 9800ms;
+}
+.menu-card--50 {
+  animation-delay: 10000ms;
 }
 .menu-card__description {
   display: flex;
   flex-direction: column;
   gap: 3px;
   width: 80%;
+  padding: 10px;
 }
 .menu-card__description p {
   font-size: 12px;
@@ -232,20 +385,22 @@ footer {
   align-items: flex-end;
   font-size: 12px;
   font-weight: 700;
+  padding-bottom: 10px;
 }
 .menu-card__animation {
+  width: 0;
   display: flex;
-  transform: scaleX(0);
   align-items: center;
   justify-content: center;
   background: #99e2d0;
   transition: all ease-in-out 500ms;
-  transform-origin: right;
+  opacity: 0;
+  z-index: -2;
 }
 .menu-card:hover .menu-card__animation {
-  background: #99e2d0;
-  transform: scaleX(1);
   width: 50px;
+  opacity: 1;
+  z-index: inherit;
 }
 
 footer {
@@ -299,6 +454,15 @@ footer .footer-container .footer-content__line .fas {
   background: #9356dc;
   border-radius: 50%;
   animation: point 1000ms backwards infinite ease-in-out alternate;
+}
+.loader .progress__point--1 {
+  animation-delay: 300ms;
+}
+.loader .progress__point--2 {
+  animation-delay: 600ms;
+}
+.loader .progress__point--3 {
+  animation-delay: 900ms;
 }
 
 .localisation {
@@ -359,6 +523,10 @@ footer .footer-container .footer-content__line .fas {
   background: #f7f7f7;
 }
 
+.illustration {
+  position: relative;
+  z-index: 2;
+}
 .illustration img {
   width: 100%;
 }
@@ -366,9 +534,9 @@ footer .footer-container .footer-content__line .fas {
 .menu {
   padding: 1.5vh;
   background: #ededed;
-  position: absolute;
+  position: relative;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   margin-top: -44px;
   border-radius: 20px 20px 0px 0px;
 }
@@ -409,15 +577,21 @@ footer .footer-container .footer-content__line .fas {
   display: flex;
   flex-direction: column;
   gap: 1.5vh;
-}
-.menu .container-menu-card .wrapper-menu-card {
-  display: flex;
+  z-index: 1;
+  position: relative;
 }
 .menu .container-menu-card__title {
   padding: 3vh 0vh 4px 0px;
   border-bottom: solid 3px #99e2d0;
   width: 40px;
   font-size: 14px;
+}
+.menu .container-menu-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  padding: 6px;
 }
 .menu .command-line {
   display: flex;
