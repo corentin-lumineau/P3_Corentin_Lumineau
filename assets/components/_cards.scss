@@ -41,6 +41,7 @@
 }
 
 .menu-card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   background: white;
@@ -48,6 +49,7 @@
   padding: 10px 15px 10px 10px;
   box-shadow: $primary-box-shadow;
   width: 100%;
+  animation: menu $menu-duration $menu-delay ease-in-out both;
 
   &__description {
     display: flex;
@@ -73,5 +75,23 @@
     align-items: flex-end;
     font-size: 12px;
     font-weight: 700;
+  }
+
+  &__animation {
+    display: flex;
+    transform: scaleX(0);
+    align-items: center;
+    justify-content: center;
+    background: $color-tertiary;
+    transition: all ease-in-out 500ms;
+    transform-origin: right;
+  }
+
+  &:hover {
+    .menu-card__animation {
+      background: $color-tertiary;
+      transform: scaleX(1);
+      width: 50px;
+    }
   }
 }
