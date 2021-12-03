@@ -347,7 +347,7 @@ footer .footer-container .footer-content__line .fas {
 .how-it-works__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 3vh;
   padding: 2vh;
 }
 
