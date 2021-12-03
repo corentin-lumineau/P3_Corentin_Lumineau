@@ -1,0 +1,36 @@
+@mixin logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  padding: 2vh 0vh 2vh 0vh;
+  background: white;
+  img {
+    width: 160px;
+  }
+}
+
+@mixin fav {
+  .fas {
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      color: $color-primary;
+      cursor: pointer;
+    }
+  }
+
+  .far {
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    opacity: 1;
+  }
+}

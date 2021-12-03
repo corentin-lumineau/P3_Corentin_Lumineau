@@ -1,0 +1,25 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: rgba(153, 226, 208, 0.5);
+
+  .progress {
+    width: 50vw;
+    height: 3vh;
+    padding: 5px;
+    position: absolute;
+    top: 50vh;
+    left: 25vw;
+    display: flex;
+    justify-content: space-between;
+
+    &__point {
+      width: 20px;
+      height: 20px;
+      background: $color-primary;
+      border-radius: 50%;
+      animation: point $loader-duration backwards infinite ease-in-out alternate;
+    }
+  }
+}

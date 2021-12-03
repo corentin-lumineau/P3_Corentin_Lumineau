@@ -1,0 +1,19 @@
+@keyframes point {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-75%);
+  }
+}
+
+@keyframes bloc {
+  0% {
+    transform: translateX(-9999px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
