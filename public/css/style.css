@@ -210,7 +210,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 100%;
   gap: 10px;
-  z-index: -1;
+  overflow: hidden;
   animation: menu 1000ms ease-in-out both;
 }
 .menu-card--1 {
@@ -397,10 +397,16 @@ a {
   opacity: 0;
   z-index: -2;
 }
+.menu-card__animation i {
+  transition: all 400ms ease-in-out;
+}
 .menu-card:hover .menu-card__animation {
   width: 50px;
   opacity: 1;
   z-index: inherit;
+}
+.menu-card:hover .menu-card__animation i {
+  transform: rotate(360deg);
 }
 
 footer {
