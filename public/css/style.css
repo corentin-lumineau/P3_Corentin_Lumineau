@@ -291,7 +291,7 @@ footer .footer-container .footer-content__line .fas {
   top: 50vh;
   left: 25vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .loader .progress__point {
   width: 20px;
