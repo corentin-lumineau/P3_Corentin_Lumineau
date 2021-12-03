@@ -36,6 +36,10 @@
     flex-direction: column;
     gap: 1.5vh;
 
+    .wrapper-menu-card {
+      display: flex;
+    }
+
     &__title {
       padding: 3vh 0vh 4px 0px;
       border-bottom: solid 3px $color-tertiary;
