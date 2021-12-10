@@ -1,13 +1,22 @@
 @mixin logo {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
     rgb(0 0 0 / 30%) 0px 1px 3px -1px;
-  padding: 2vh 0vh 2vh 0vh;
+  padding: 40px 4vh;
   background: white;
   img {
-    width: 160px;
+    width: 315px;
+
+    @media screen and (max-width: $small-screen) {
+      width: 160px;
+    }
+  }
+
+  @media screen and (max-width: $small-screen) {
+    justify-content: center;
+    padding: 2vh 0vh 2vh 0vh;
   }
 }
 
@@ -32,5 +41,20 @@
     right: -5px;
     top: 10px;
     opacity: 1;
+  }
+}
+
+@mixin localisation {
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+  gap: 15px;
+  background: $background-grey-dark;
+  color: lighten(black, 30%);
+  font-weight: 700;
+
+  i {
+    display: flex;
+    align-items: center;
   }
 }
