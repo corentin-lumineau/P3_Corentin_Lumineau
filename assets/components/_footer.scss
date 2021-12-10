@@ -2,7 +2,8 @@ footer {
   background: lighten(black, 5%);
 
   .footer-container {
-    max-width: 1300px;
+    max-width: 1400px;
+    margin: auto;
     color: white;
     padding: 15px;
     display: flex;
@@ -23,7 +24,7 @@ footer {
         gap: 8px;
 
         .fas {
-          width: 4%;
+          width: 10px;
         }
       }
     }
