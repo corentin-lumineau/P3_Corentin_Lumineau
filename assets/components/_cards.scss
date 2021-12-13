@@ -70,6 +70,7 @@
     width: 80%;
     padding: 10px;
     justify-content: center;
+    transition: width 500ms ease-in-out;
 
     p {
       font-size: 12px;
@@ -116,6 +117,12 @@
   }
 
   &:hover {
+    @media screen and (max-width: $small-screen) {
+      .menu-card__description {
+        width: 70%;
+      }
+    }
+
     .menu-card__animation {
       width: 50px;
       opacity: 1;

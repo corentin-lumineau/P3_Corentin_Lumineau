@@ -38,6 +38,11 @@ h1 {
   margin: unset;
 }
 
+h2 {
+  font-size: 24px;
+  margin: unset;
+}
+
 h4 {
   margin: unset;
 }
@@ -73,6 +78,7 @@ a {
 }
 .logo img {
   width: 315px;
+  object-fit: contain;
 }
 @media screen and (max-width: 700px) {
   .logo img {
@@ -119,6 +125,7 @@ a {
 }
 .logo-menu img {
   width: 315px;
+  object-fit: contain;
 }
 @media screen and (max-width: 700px) {
   .logo-menu img {
@@ -447,6 +454,7 @@ a {
   width: 80%;
   padding: 10px;
   justify-content: center;
+  transition: width 500ms ease-in-out;
 }
 .menu-card__description p {
   font-size: 12px;
@@ -487,6 +495,11 @@ a {
 }
 .menu-card__animation i {
   transition: all 400ms ease-in-out;
+}
+@media screen and (max-width: 700px) {
+  .menu-card:hover .menu-card__description {
+    width: 70%;
+  }
 }
 .menu-card:hover .menu-card__animation {
   width: 50px;

@@ -8,6 +8,7 @@
   background: white;
   img {
     width: 315px;
+    object-fit: contain;
 
     @media screen and (max-width: $small-screen) {
       width: 160px;
