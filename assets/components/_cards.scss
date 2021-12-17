@@ -119,9 +119,15 @@
   }
 
   &:hover {
+    @media screen and (max-width: $medium-screen) {
+      .menu-card__description {
+        width: 65%;
+      }
+    }
+
     @media screen and (max-width: $small-screen) {
       .menu-card__description {
-        width: 70%;
+        width: 65%;
       }
     }
 

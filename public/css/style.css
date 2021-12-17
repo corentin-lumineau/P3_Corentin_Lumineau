@@ -172,7 +172,7 @@ a {
     font-size: 13px;
   }
 }
-@media (min-width: 700px) and (max-width: 900px) {
+@media (min-width: 700px) and (max-width: 1400px) {
   .button-1 {
     width: 190px;
     height: 40px;
@@ -498,9 +498,14 @@ a {
 .menu-card__animation i {
   transition: all 400ms ease-in-out;
 }
+@media screen and (max-width: 1400px) {
+  .menu-card:hover .menu-card__description {
+    width: 65%;
+  }
+}
 @media screen and (max-width: 700px) {
   .menu-card:hover .menu-card__description {
-    width: 70%;
+    width: 65%;
   }
 }
 .menu-card:hover .menu-card__animation {
