@@ -221,6 +221,8 @@ a {
 }
 .button-2__content .fas {
   color: gray;
+  display: flex;
+  align-items: center;
 }
 .button-2:hover {
   background: rgba(147, 86, 220, 0.3);
