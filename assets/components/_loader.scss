@@ -1,18 +1,26 @@
 .loader {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   background: rgba(153, 226, 208, 0.5);
+  animation: loader;
+  animation-delay: $bloc-delay;
+  animation-fill-mode: forwards;
 
   .progress {
     width: 50vw;
     height: 3vh;
     padding: 5px;
     position: absolute;
-    top: 50vh;
-    left: 25vw;
+    top: 50%;
+    left: 25%;
     display: flex;
     justify-content: space-around;
+
+    @media screen and (max-width: $small-screen) {
+      top: 50vh;
+      left: 25vw;
+    }
 
     &__point {
       width: 20px;
