@@ -82,6 +82,8 @@
     h4 {
       font-size: 15px;
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     @media screen and (max-width: $small-screen) {

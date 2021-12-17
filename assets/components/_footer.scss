@@ -18,6 +18,11 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 5px;
+
+      a {
+        color: white;
+      }
+
       &__line {
         display: flex;
         justify-content: flex-start;

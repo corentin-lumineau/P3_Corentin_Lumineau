@@ -465,6 +465,8 @@ a {
 .menu-card__description h4 {
   font-size: 15px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 700px) {
   .menu-card__description {
@@ -536,6 +538,9 @@ footer .footer-container .footer-content {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+footer .footer-container .footer-content a {
+  color: white;
 }
 footer .footer-container .footer-content__line {
   display: flex;
