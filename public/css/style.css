@@ -1,14 +1,23 @@
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes point {
   0% {
     transform: translateY(0%);
   }
   100% {
     transform: translateY(-75%);
+    opacity: 0;
   }
 }
 @keyframes bloc {
   0% {
-    transform: translateX(-1000px);
+    transform: translateX(-2000px);
   }
   100% {
     transform: translateX(0);
@@ -56,15 +65,17 @@ a {
   color: black;
 }
 
-/* #home-header,
+#home-header,
 #home-section-1,
 #home-section-2,
 #home-footer {
-  animation: bloc 0ms $bloc-delay both;
-} */
+  animation: bloc 0ms 3000ms both;
+}
+
 .main-wrapper {
   max-width: 1400px;
   margin: auto;
+  position: relative;
 }
 
 .logo {
@@ -561,7 +572,6 @@ footer .footer-container .footer-content__line .fas {
   height: 100vh;
   position: absolute;
   background: rgba(153, 226, 208, 0.5);
-  display: none;
 }
 .loader .progress {
   width: 50vw;

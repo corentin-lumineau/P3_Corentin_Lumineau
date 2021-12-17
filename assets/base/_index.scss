@@ -32,14 +32,15 @@ a {
   color: black;
 }
 
-/* #home-header,
+#home-header,
 #home-section-1,
 #home-section-2,
 #home-footer {
   animation: bloc 0ms $bloc-delay both;
-} */
+}
 
 .main-wrapper {
   max-width: 1400px;
   margin: auto;
+  position: relative;
 }
